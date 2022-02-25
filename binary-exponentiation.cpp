@@ -5,10 +5,10 @@ int64_t power(int64_t a, int64_t b)
 	{
 		if (b % 2 == 1)
 		{
-			result = (result % mod) * (a % mod);
+			result = (result) * (a);
 		}
-		a = (a % mod)*(a % mod);
+		a = (a)*(a);
 		b /= 2;
 	}
-	return result % mod;
+	return result;
 }
